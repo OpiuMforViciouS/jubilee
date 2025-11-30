@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на юбилей</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', Georgia, serif;
+            background: #fefefe;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .invitation {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 1px;
+            background: #d4af37;
+            margin: 20px auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+
+        .names {
+            font-size: 1.8em;
+            margin: 30px 0;
+            color: #d4af37;
+        }
+
+        .date-place {
+            margin: 40px 0;
+            font-size: 1.2em;
+        }
+
+        .details {
+            background: #f8f8f8;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .dress-code {
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .rsvp {
+            margin: 40px 0;
+        }
+
+        .rsvp-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #d4af37;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .rsvp-button:hover {
+            background: #b8941f;
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2em; }
+            .names { font-size: 1.5em; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="invitation">
+        <div class="header">
+            <div class="decorative-line"></div>
+            <h1>Приглашение на юбилей</h1>
+            <div class="decorative-line"></div>
+        </div>
+
+        <div class="names">
+            Дорогие друзья и близкие!
+        </div>
+
+        <p>С огромной радостью приглашаем вас разделить с нами<br>празднование нашего юбилея</p>
+
+        <div class="date-place">
+            <p><strong>25 мая 2024 года</strong></p>
+            <p>в <strong>18:00</strong></p>
+            <p>Ресторан "Времена года"</p>
+            <p>ул. Центральная, 15</p>
+        </div>
+
+        <div class="details">
+            <p>Мы будем благодарны, если вы подтвердите<br>свое присутствие до 15 мая</p>
+            
+            <div class="dress-code">
+                Дресс-код: вечерний наряд
+            </div>
+        </div>
+
+        <div class="rsvp">
+            <a href="tel:+79001234567" class="rsvp-button">Подтвердить присутствие</a>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                Иван: +7 (900) 123-45-67
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>С любовью,<br>Иван и Мария</p>
+            <div class="decorative-line" style="margin: 20px auto;"></div>
+            <p>Ждем с нетерпением этого прекрасного вечера!</p>
+        </div>
+    </div>
+</body>
+</html>
