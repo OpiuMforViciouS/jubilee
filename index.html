@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на юбилей</title>
+    <title>Приглашение на 50-летний юбилей</title>
+    <meta name="description" content="Приглашение на празднование 50-летнего юбилея">
     <style>
         * {
             margin: 0;
@@ -13,9 +14,10 @@
 
         body {
             font-family: 'Playfair Display', Georgia, serif;
-            background: #fefefe;
+            background: linear-gradient(135deg, #fefefe 0%, #f8f6f0 100%);
             color: #333;
             line-height: 1.6;
+            min-height: 100vh;
         }
 
         .invitation {
@@ -29,10 +31,10 @@
             margin-bottom: 40px;
         }
 
-        .decorative-line {
+        .gold-line {
             width: 100px;
-            height: 1px;
-            background: #d4af37;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
             margin: 20px auto;
         }
 
@@ -41,6 +43,13 @@
             font-weight: normal;
             margin-bottom: 20px;
             color: #2c2c2c;
+        }
+
+        .anniversary-number {
+            font-size: 4em;
+            color: #d4af37;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .names {
@@ -52,6 +61,9 @@
         .date-place {
             margin: 40px 0;
             font-size: 1.2em;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .details {
@@ -59,30 +71,54 @@
             padding: 30px;
             margin: 30px 0;
             border-radius: 10px;
-        }
-
-        .dress-code {
-            font-style: italic;
-            color: #666;
-            margin: 20px 0;
+            border-left: 4px solid #d4af37;
         }
 
         .rsvp {
             margin: 40px 0;
         }
 
-        .rsvp-button {
+        .whatsapp-button {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 15px 30px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+            border: 2px solid #25D366;
+            font-size: 1.1em;
+            margin: 10px;
+        }
+
+        .whatsapp-button:hover {
+            background: transparent;
+            color: #25D366;
+            transform: translateY(-2px);
+        }
+
+        .phone-button {
+            display: inline-block;
+            padding: 15px 30px;
             background: #d4af37;
             color: white;
             text-decoration: none;
             border-radius: 25px;
-            transition: background 0.3s;
+            transition: all 0.3s;
+            border: 2px solid #d4af37;
+            font-size: 1.1em;
+            margin: 10px;
         }
 
-        .rsvp-button:hover {
-            background: #b8941f;
+        .phone-button:hover {
+            background: transparent;
+            color: #d4af37;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.1em;
         }
 
         .footer {
@@ -91,9 +127,18 @@
             font-size: 0.9em;
         }
 
+        .instructions {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
         @media (max-width: 480px) {
             h1 { font-size: 2em; }
             .names { font-size: 1.5em; }
+            .anniversary-number { font-size: 3em; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
@@ -101,16 +146,20 @@
 <body>
     <div class="invitation">
         <div class="header">
-            <div class="decorative-line"></div>
+            <div class="gold-line"></div>
             <h1>Приглашение на юбилей</h1>
-            <div class="decorative-line"></div>
+            <div class="gold-line"></div>
+        </div>
+
+        <div class="anniversary-number">
+            50
         </div>
 
         <div class="names">
             Дорогие друзья и близкие!
         </div>
 
-        <p>С огромной радостью приглашаем вас разделить с нами<br>празднование нашего юбилея</p>
+        <p>С огромной радостью приглашаем вас разделить с нами<br>празднование нашего золотого юбилея</p>
 
         <div class="date-place">
             <p><strong>25 мая 2024 года</strong></p>
@@ -122,21 +171,42 @@
         <div class="details">
             <p>Мы будем благодарны, если вы подтвердите<br>свое присутствие до 15 мая</p>
             
-            <div class="dress-code">
+            <div style="margin: 20px 0; font-style: italic; color: #666;">
                 Дресс-код: вечерний наряд
             </div>
         </div>
 
         <div class="rsvp">
-            <a href="tel:+79001234567" class="rsvp-button">Подтвердить присутствие</a>
-            <p style="margin-top: 15px; font-size: 0.9em;">
-                Иван: +7 (900) 123-45-67
-            </p>
+            <h3>Подтвердите участие</h3>
+            
+            <div class="instructions">
+                <p><strong>Как подтвердить через WhatsApp:</strong></p>
+                <p>1. Нажмите кнопку ниже</p>
+                <p>2. Отправится готовое сообщение</p>
+                <p>3. Дополните его вашим именем и количеством гостей</p>
+            </div>
+
+            <a href="https://wa.me/79001234567?text=Привет!%20Я%20подтверждаю%20участие%20в%20юбилее%20%F0%9F%8E%89%20Мое%20имя:%20%5Bвведите%20имя%5D%20Количество%20гостей:%20%5Bвведите%20число%5D" 
+               class="whatsapp-button" 
+               target="_blank">
+               💬 Подтвердить через WhatsApp
+            </a>
+
+            <br>
+
+            <a href="tel:+79001234567" class="phone-button">
+               📞 Позвонить для подтверждения
+            </a>
+
+            <div class="contact-info">
+                <p><strong>Иван:</strong> +7 (900) 123-45-67</p>
+                <p><strong>Мария:</strong> +7 (900) 765-43-21</p>
+            </div>
         </div>
 
         <div class="footer">
             <p>С любовью,<br>Иван и Мария</p>
-            <div class="decorative-line" style="margin: 20px auto;"></div>
+            <div class="gold-line" style="margin: 20px auto;"></div>
             <p>Ждем с нетерпением этого прекрасного вечера!</p>
         </div>
     </div>
