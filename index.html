@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на 50-летний юбилей</title>
-    <meta name="description" content="Приглашение на празднование 50-летнего юбилея">
+    <title>Приглашение на 70-летний юбилей Садомцева Виктора Анатольевича</title>
+    <meta name="description" content="Приглашение на празднование 70-летнего юбилея Садомцева Виктора Анатольевича">
     <style>
         * {
             margin: 0;
@@ -13,18 +13,23 @@
         }
 
         body {
-            font-family: 'Playfair Display', Georgia, serif;
-            background: linear-gradient(135deg, #fefefe 0%, #f8f6f0 100%);
-            color: #333;
+            font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f8f5f0 0%, #f0ede6 100%);
+            color: #3a3429;
             line-height: 1.6;
             min-height: 100vh;
+            padding: 20px;
         }
 
         .invitation {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px;
             text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e8e4dd;
         }
 
         .header {
@@ -32,46 +37,118 @@
         }
 
         .gold-line {
-            width: 100px;
+            width: 150px;
             height: 2px;
-            background: linear-gradient(90deg, transparent, #d4af37, transparent);
-            margin: 20px auto;
+            background: linear-gradient(90deg, transparent, #b08d57, transparent);
+            margin: 25px auto;
         }
 
         h1 {
-            font-size: 2.5em;
-            font-weight: normal;
-            margin-bottom: 20px;
-            color: #2c2c2c;
+            font-size: 2.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #3a3429;
+            letter-spacing: 1.5px;
         }
 
-        .anniversary-number {
-            font-size: 4em;
-            color: #d4af37;
+        .subtitle {
+            font-size: 1.1em;
+            color: #7a6e5d;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .photo-section {
+            margin: 40px 0;
+        }
+
+        .photo-frame {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto 30px;
+            border: 15px solid white;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #f5f2ec, #e8e2d5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #b08d57;
+            font-style: italic;
+        }
+
+        .photo-placeholder i {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .jubilee-number {
+            font-size: 5em;
+            color: #b08d57;
             margin: 20px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-weight: 600;
+            letter-spacing: 3px;
         }
 
-        .names {
-            font-size: 1.8em;
-            margin: 30px 0;
-            color: #d4af37;
+        .years-text {
+            font-size: 1.4em;
+            color: #7a6e5d;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .name {
+            font-size: 2.4em;
+            margin: 25px 0;
+            color: #3a3429;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .name-subtitle {
+            font-size: 1.2em;
+            color: #7a6e5d;
+            margin-bottom: 30px;
+            font-style: italic;
         }
 
         .date-place {
             margin: 40px 0;
             font-size: 1.2em;
-            background: rgba(212, 175, 55, 0.1);
-            padding: 20px;
-            border-radius: 10px;
+            background: #f9f7f3;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #b08d57;
+        }
+
+        .date-place strong {
+            color: #b08d57;
+            font-weight: 600;
         }
 
         .details {
-            background: #f8f8f8;
+            background: #f9f7f3;
             padding: 30px;
             margin: 30px 0;
-            border-radius: 10px;
-            border-left: 4px solid #d4af37;
+            border-radius: 8px;
+            text-align: left;
+            border-top: 2px solid #e8e4dd;
+            border-bottom: 2px solid #e8e4dd;
         }
 
         .rsvp {
@@ -80,15 +157,16 @@
 
         .whatsapp-button {
             display: inline-block;
-            padding: 15px 30px;
+            padding: 16px 35px;
             background: #25D366;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             transition: all 0.3s;
             border: 2px solid #25D366;
             font-size: 1.1em;
-            margin: 10px;
+            margin: 15px;
+            font-weight: 500;
         }
 
         .whatsapp-button:hover {
@@ -99,49 +177,85 @@
 
         .phone-button {
             display: inline-block;
-            padding: 15px 30px;
-            background: #d4af37;
+            padding: 16px 35px;
+            background: #b08d57;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             transition: all 0.3s;
-            border: 2px solid #d4af37;
+            border: 2px solid #b08d57;
             font-size: 1.1em;
-            margin: 10px;
+            margin: 15px;
+            font-weight: 500;
         }
 
         .phone-button:hover {
             background: transparent;
-            color: #d4af37;
+            color: #b08d57;
             transform: translateY(-2px);
         }
 
         .contact-info {
-            margin: 20px 0;
-            font-size: 1.1em;
+            margin: 25px 0;
+            font-size: 1.2em;
+            padding: 20px;
+            border-radius: 8px;
         }
 
         .footer {
-            margin-top: 40px;
-            color: #888;
-            font-size: 0.9em;
+            margin-top: 50px;
+            color: #7a6e5d;
+            font-size: 1em;
+            padding-top: 30px;
+            border-top: 1px solid #e8e4dd;
         }
 
         .instructions {
-            background: #e8f4f8;
+            background: #f0f7f1;
             padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
+            border-radius: 8px;
+            margin: 25px 0;
             text-align: left;
+            font-size: 1em;
         }
 
-        @media (max-width: 480px) {
-            h1 { font-size: 2em; }
-            .names { font-size: 1.5em; }
-            .anniversary-number { font-size: 3em; }
+        .quote {
+            font-style: italic;
+            color: #7a6e5d;
+            margin: 30px 0;
+            padding: 20px;
+            font-size: 1.1em;
+            text-align: center;
+            line-height: 1.8;
+            background: #f9f7f3;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.9em; }
+            .name { font-size: 2em; }
+            .jubilee-number { font-size: 4em; }
+            .photo-frame {
+                width: 250px;
+                height: 250px;
+            }
+            .invitation {
+                padding: 25px 20px;
+            }
+            .whatsapp-button, .phone-button {
+                display: block;
+                margin: 15px auto;
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .name { font-size: 1.8em; }
+            .jubilee-number { font-size: 3.5em; }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="invitation">
@@ -149,66 +263,127 @@
             <div class="gold-line"></div>
             <h1>Приглашение на юбилей</h1>
             <div class="gold-line"></div>
+            <p class="subtitle">С глубоким уважением приглашаем вас на торжество</p>
         </div>
 
-        <div class="anniversary-number">
-            50
+        <div class="jubilee-number">
+            70
+        </div>
+        <p class="years-text">почетных лет</p>
+
+        <div class="photo-section">
+            <div class="photo-frame">
+                <img src="photo_2025-12-04_22-03-54.jpg"
+                     alt="Садомцев Виктор Анатольевич"
+                     id="jubileePhoto">
+
+                <div class="photo-placeholder" id="photoPlaceholder" style="display: none;">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Виктор Анатольевич</span>
+                </div>
+            </div>
+
+            <div class="name">
+                Садомцев<br>Виктор Анатольевич
+            </div>
+            <p class="name-subtitle">Дорогой юбиляр</p>
         </div>
 
-        <div class="names">
-            Дорогие друзья и близкие!
+        <div class="quote">
+            "70 лет — возраст мудрости, достоинства и благородства.<br>
+            Время, когда ценятся верные друзья, близкие люди и душевные встречи."
         </div>
-
-        <p>С огромной радостью приглашаем вас разделить с нами<br>празднование нашего золотого юбилея</p>
 
         <div class="date-place">
-            <p><strong>25 мая 2024 года</strong></p>
-            <p>в <strong>18:00</strong></p>
-            <p>Ресторан "Времена года"</p>
-            <p>ул. Центральная, 15</p>
+            <p style="font-size: 1.4em; margin-bottom: 10px;"><strong>3 января 2026 года</strong></p>
+            <p style="font-size: 1.3em; margin-bottom: 20px;">в <strong>15:00</strong></p>
+            <p style="margin-bottom: 5px; font-size: 1.2em;">Бар "Сельпо"</p>
+            <p style="color: #7a6e5d; margin-bottom: 5px;">село Тихоновка, ул. Ленина</p>
         </div>
 
         <div class="details">
-            <p>Мы будем благодарны, если вы подтвердите<br>свое присутствие до 15 мая</p>
-            
-            <div style="margin: 20px 0; font-style: italic; color: #666;">
-                Дресс-код: вечерний наряд
+            <h3 style="color: #b08d57; margin-bottom: 20px; text-align: center;">
+                <i class="fas fa-info-circle"></i> Детали мероприятия
+            </h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-utensils" style="color: #b08d57; position: absolute; left: 0; top: 5px;"></i>
+                    <span>Праздничный банкет</span>
+                </li>
+                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-users" style="color: #b08d57; position: absolute; left: 0; top: 5px;"></i>
+                    <span>Встреча друзей и близких</span>
+                </li>
+                <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                    <i class="fas fa-glass-cheers" style="color: #b08d57; position: absolute; left: 0; top: 5px;"></i>
+                    <span>Торжественные поздравления</span>
+                </li>
+            </ul>
+
+            <div style="background: #f5f2ec; padding: 15px; border-radius: 6px; margin-top: 25px; text-align: center;">
+                <p style="margin: 0;">
+                    <strong>Дресс-код:</strong> праздничный, нарядный
+                </p>
             </div>
+
+            <p style="margin-top: 25px; font-size: 1.1em; text-align: center; color: #b08d57;">
+                <strong><i class="far fa-calendar-check"></i> Просим подтвердить участие до 15 декабря 2025 года</strong>
+            </p>
         </div>
 
         <div class="rsvp">
-            <h3>Подтвердите участие</h3>
-            
+            <h3 style="margin-bottom: 25px; color: #3a3429; font-size: 1.4em;">Подтвердите ваше участие</h3>
+
             <div class="instructions">
-                <p><strong>Как подтвердить через WhatsApp:</strong></p>
-                <p>1. Нажмите кнопку ниже</p>
-                <p>2. Отправится готовое сообщение</p>
-                <p>3. Дополните его вашим именем и количеством гостей</p>
+                <p><strong><i class="fas fa-comment-alt" style="margin-right: 10px;"></i> Как подтвердить через WhatsApp:</strong></p>
+                <p>1. Нажмите кнопку "Подтвердить через WhatsApp"</p>
+                <p>2. Дополните сообщение вашим именем и количеством гостей</p>
+                <p>3. Отправьте сообщение</p>
             </div>
 
-            <a href="https://wa.me/79001234567?text=Привет!%20Я%20подтверждаю%20участие%20в%20юбилее%20%F0%9F%8E%89%20Мое%20имя:%20%5Bвведите%20имя%5D%20Количество%20гостей:%20%5Bвведите%20число%5D" 
-               class="whatsapp-button" 
+            <a href="https://wa.me/79041231925?text=Добрый%20день!%20Подтверждаю%20участие%20в%2070-летнем%20юбилее%20Виктора%20Анатольевича%20Садомцева%203%20января%202026%20года.%0A%0AМое%20имя:%20%0AКоличество%20гостей:%20%0A%0AС%20уважением,"
+               class="whatsapp-button"
                target="_blank">
-               💬 Подтвердить через WhatsApp
+               <i class="fab fa-whatsapp" style="margin-right: 12px; font-size: 1.2em;"></i> Подтвердить через WhatsApp
             </a>
 
             <br>
 
-            <a href="tel:+79001234567" class="phone-button">
-               📞 Позвонить для подтверждения
+            <a href="tel:+79041231925" class="phone-button">
+               <i class="fas fa-phone-alt" style="margin-right: 12px; font-size: 1.2em;"></i> Позвонить для подтверждения
             </a>
 
             <div class="contact-info">
-                <p><strong>Иван:</strong> +7 (900) 123-45-67</p>
-                <p><strong>Мария:</strong> +7 (900) 765-43-21</p>
+                <p style="margin-bottom: 15px; font-size: 1.1em; text-align: center;">
+                    <strong>По всем вопросам обращайтесь:</strong>
+                </p>
+                <p style="text-align: center; font-size: 1.3em; color: #b08d57; font-weight: 600;">
+                    +7 (904) 123-19-25
+                </p>
+                <p style="text-align: center; margin-top: 5px; color: #7a6e5d;">
+                    (жена Виктора Анатольевича)
+                </p>
             </div>
         </div>
 
         <div class="footer">
-            <p>С любовью,<br>Иван и Мария</p>
-            <div class="gold-line" style="margin: 20px auto;"></div>
-            <p>Ждем с нетерпением этого прекрасного вечера!</p>
+            <p style="font-size: 1.2em; margin-bottom: 15px;">С глубоким уважением,</p>
+            <p style="font-size: 1.3em; color: #b08d57; margin-bottom: 10px; font-weight: 600;">Семья Садомцевых</p>
+            <div class="gold-line" style="margin: 25px auto; width: 180px;"></div>
+            <p>Будем рады видеть вас на этом торжественном событии</p>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const photo = document.getElementById('jubileePhoto');
+            const placeholder = document.getElementById('photoPlaceholder');
+
+            photo.onerror = function() {
+                photo.style.display = 'none';
+                placeholder.style.display = 'flex';
+            };
+        });
+    </script>
 </body>
 </html>
